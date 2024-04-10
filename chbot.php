@@ -1,14 +1,11 @@
-// Completamos el vector con frases
-$vector = array(
-1 => “Nada nuevo hay bajo el sol, pero cuántas cosas viejas hay que no conocemos.”,
-2 => “El verdadero amigo es aquel que está a tu lado cuando preferiría estar en otra parte.”,
-3 => “La sabiduría es la hija de la experiencia.”,
-4 => “Nunca hay viento favorable para el que no sabe hacia dónde va.”,
-);
+<?php
+$array = [
+    0=>'Me sacaron del grupo de WhatsApp de paracaidismo. Se ve que no caía bien.',
+    1=>'¿Sabes cuánta leche da una vaca en su vida? Pues la misma que en bajada.',
+    2=>'¿Cuál es el colmo de un peluquero? Descubrir que en la vida nada es permanente.'
+];
 
-// Obtenemos un número aleatorio
-$numero = rand(1,4);
+$indiceAletario = array_rand($array);
 
-// Imprimimos la frase
-echo “$vector[$numero]”;
+echo "Aquí va un chiste: {$array[$indiceAletario]}";
 ?>
